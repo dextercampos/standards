@@ -40,3 +40,10 @@ services:
     NatePage\Standards\Sniffs\ControlStructures\NoElseSniff:
     NatePage\Standards\Sniffs\ControlStructures\NoNotOperatorSniff:
     NatePage\Standards\Sniffs\ControlStructures\YodaConditionSniff:
+
+    DexterCampos\Sniffs\Commenting\DocCommentSortingSniff:
+      alwaysTopAnnotations:
+        - '@covers'
+        - '@param'
+        - '@return'
+        - '@throw'
