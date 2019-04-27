@@ -8,6 +8,9 @@ services:
     PHP_CodeSniffer\Standards\PSR1\Sniffs\Methods\CamelCapsMethodNameSniff:
 
     SlevomatCodingStandard\Sniffs\Classes\ClassConstantVisibilitySniff:
+    SlevomatCodingStandard\Sniffs\Classes\EmptyLinesAroundClassBracesSniff:
+      linesCountAfterOpeningBrace: 0
+      linesCountBeforeClosingBrace: 0
     SlevomatCodingStandard\Sniffs\Commenting\EmptyCommentSniff:
     SlevomatCodingStandard\Sniffs\Commenting\InlineDocCommentDeclarationSniff:
     SlevomatCodingStandard\Sniffs\ControlStructures\DisallowEqualOperatorsSniff:
@@ -26,9 +29,6 @@ services:
         linesCountBeforeFirstUse: 1
         linesCountBetweenUseTypes: 0
         linesCountAfterLastUse: 1
-    SlevomatCodingStandard\Sniffs\Types\EmptyLinesAroundTypeBracesSniff:
-        linesCountAfterOpeningBrace: 0
-        linesCountBeforeClosingBrace: 0
     SlevomatCodingStandard\Sniffs\TypeHints\LongTypeHintsSniff:
     SlevomatCodingStandard\Sniffs\TypeHints\NullableTypeForNullDefaultValueSniff:
     SlevomatCodingStandard\Sniffs\TypeHints\ParameterTypeHintSpacingSniff:
